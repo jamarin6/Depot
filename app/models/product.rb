@@ -9,7 +9,7 @@ class Product < ActiveRecord::Base
 	validates :image_url, allow_blank: true, format: {
 		with: %r{\.(gif|jpg|png)}i,
 		message: 'must be a URL for GIF, JPG or PNG image.'
-	}   # *****ESTO NO VALE como viene en el libro, he borrado $ aqui -> png)$} y va ok*****
+	}   # *****ESTO NO VALE como viene en el libro, he borrado $ aqui -> png)$}i, y va ok*****
 
 
 end
